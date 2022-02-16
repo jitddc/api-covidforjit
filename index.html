@@ -23,7 +23,8 @@
       $data = file_get_contents($url);
       $data = json_decode($data);
 ?>
-    <?php echo 'จังหวัด'. $data[0]->txn_date;?><BR>
+    <?php echo 'วันที่'.$data[0]->txn_date; ?><BR>
+    <?php echo 'ผู้ป่วยรายใหม่'.$data[0]->new_case; ?><BR>
 
 
 		<div class="container">
